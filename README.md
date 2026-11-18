@@ -2,7 +2,7 @@
 
 Trabalho T3: carga do SIASUS (DATASUS) em MySQL, análise com Pandas e visualização em Python, para apoiar a Secretaria Municipal de Saúde de Ijuí/RS.
 
-**Integrantes:** _preencher_
+**Integrantes:** Arthur Pereira e Julia Schafer
 
 ## Fontes e período analisado
 
