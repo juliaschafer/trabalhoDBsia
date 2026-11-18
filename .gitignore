@@ -1,0 +1,13 @@
+# Dados brutos grandes (baixar do DATASUS, ver README)
+PARS2607.csv
+PARS2607.dbc
+PARS2607.dbf
+TAB_SIA/
+TAB_SIA.zip
+
+# Material da disciplina
+Exemplos/
+
+# Lixo local
+.DS_Store
+.ipynb_checkpoints/
