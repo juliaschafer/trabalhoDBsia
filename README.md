@@ -22,7 +22,6 @@ Somente uma competência está carregada. Por isso a evolução temporal (picos 
 | `sql/create_pars.sql` | Cria o banco `dbsia` e a tabela `pars` |
 | `sql/load.sql` | Importa `PARS2607.csv` na tabela `pars` com `LOAD DATA LOCAL INFILE` |
 | `sql/create_auxiliares.sql` | Cria e carrega as tabelas auxiliares, a VIEW `procedimentos` e os índices |
-| `sql/corrige_s_cid.sql` | Remove 14 códigos CID duplicados em minúsculo na `s_cid` e cria o índice `idx_pars_ufmun` |
 | `notebooks/producaoTrabalhoDBsia.ipynb` | Notebook final: exploração, limpeza, análises, gráficos e interpretação |
 | `notebooks/Etapas 2 e 3 - Pandas e Visualizacao - DBSIA.ipynb` | Versão guiada das Aulas 2 e 3 (modelo da disciplina) |
 | `csv/`, `PARS2607.csv`, `TAB_SIA/` | Dados (não versionar); os scripts SQL apontam para estes caminhos |
@@ -60,10 +59,8 @@ mysql --local-infile=1 -u root -p
 source sql/create_pars.sql;
 source sql/load.sql;
 source sql/create_auxiliares.sql;
-source sql/corrige_s_cid.sql;
 ```
 
-Conferência: ao final de `corrige_s_cid.sql`, as contagens `linhas_view` e `linhas_pars` devem ser iguais (68.827 linhas de Ijuí).
 
 ### 3. Executar as análises (Aulas 2 e 3)
 
@@ -94,4 +91,3 @@ O notebook pede a senha do MySQL (`getpass`) e lê os dados da VIEW `pa_ijui`.
 
 - Incluir no repositório o script SQL que cria a VIEW `pa_ijui`, usada pelo notebook.
 - Gerar a tabela de granularidade temporal (`04-gera-dimtempo-mysql.sql`).
-- Reexecutar o notebook após `corrige_s_cid.sql`, se a correção ainda não tiver sido aplicada ao banco.
