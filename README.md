@@ -84,10 +84,4 @@ O notebook pede a senha do MySQL (`getpass`) e lê os dados da VIEW `pa_ijui`.
 
 ## Limitações conhecidas
 
-- O SIA-SUS não registra internações (estão no SIH/SUS) nem renda.
 - Apenas a competência 2026-07 está carregada.
-
-## Pendências
-
-- Incluir no repositório o script SQL que cria a VIEW `pa_ijui`, usada pelo notebook.
-- Gerar a tabela de granularidade temporal (`04-gera-dimtempo-mysql.sql`).
